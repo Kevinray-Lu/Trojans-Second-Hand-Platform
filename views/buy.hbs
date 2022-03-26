@@ -1,0 +1,18 @@
+<h2>Buy Item</h2>
+<form method="POST" action="">
+	<div>
+		<label for="title">Name of Product you want to buy:</label>
+		<input type="text" id="title" name="title" value="">
+	</div>
+	<input type="submit" value="Add">
+</form>
+
+<p>{{error}}</p>
+
+<ol>
+{{#each shop}}
+<li class="text-muted"><p><em>Item name: {{title}}</em></p>
+	<p>Price: {{price}}</p>
+	<p><small>Description: {{description}}</small></p></li>
+{{/each}}
+</ol>
