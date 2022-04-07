@@ -17,6 +17,9 @@
 	</div>
 </form> --}}
 
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -90,31 +93,33 @@
 
     <!-- Add your site or application content here -->
     
-    <!--header-area start-->
+    <!--START HEADER-AREA-->
     <div class="header-area Home2">
         <!--top header-->
         <div class="header-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-5 col-md-4">
-                        <div class="cl-h-t-info">
+                    <!-- * Ignore some Links-->
+                    <div class="col-xs-12 col-sm-5 col-md-4"> <!-- * To keep the position of the logo-->
+                        {{!-- <div class="cl-h-t-info">
                             <ul>
                                 <li><a href="my-account.html"><i class="fa fa-bars"></i> my account</a></li>
                                 <li><a href="wishlist.html">my wishlist</a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-4">
                         <div class="classic-logo">
-                            <a href="index.html">
-                                <img src="img/home2/logo.png" alt="">
+                            <a href="../"> <!-- * Return to the home page-->
+                                <img src="img_t/logo.png" style="height:40px;" alt=""> <!-- * New Logo-->
                             </a>
                         </div>
                     </div>
+                    <!-- * Ignore infos-->
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="header-info c-l">
                             <ul>
-                                <li class="my-cart">
+                                {{!-- <li class="my-cart">
                                     <a href="cart.html"><img src="img/home2/cart.png" alt=""></a>
                                     <!--my cart content start-->
                                     <div class="my-cart-description">
@@ -155,7 +160,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="my-account.html">login</a></li>
+                                <li>
+                                    <a href="my-account.html">login</a>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
@@ -169,10 +176,12 @@
                     <div class="hidden-xs col-sm-8 col-md-8">
                         <div class="header-menu home2">                                                  
                             <ul id="nav">
-                                <li><a href="index.html">HOME</a></li>
-                                <li><a href="about-us.html">ABOUT</a></li>
-                                <li><a href="shop.html">SHOP</a></li>
-                                <li><a href="shop.html">PAGES</a>
+                                <li><a href="../">HOME</a></li>
+                                <li><a href="buy">BUY</a></li>
+                                <li><a href="sell">SELL</a></li>
+                                <li><a href="share">SHARE</a></li>
+                                <li><a>About US</a></li>
+                                {{!-- <li><a href="shop.html">PAGES</a>
                                     <div class="sub-menu">
                                         <ul>
                                             <li><a href="about-us.html">About us</a></li>
@@ -186,21 +195,19 @@
                                             <li><a href="404.html">Error pges</a></li>
                                         </ul>
                                     </div>
-                                </li>
-                                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                                <li><a href="contact.html">CONTACT</a></li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 ol-md-4">
-                        <div class="h-search-btn">                                                  
+                        {{!-- <div class="h-search-btn">                                                  
                             <div class="classic-search">
                                 <form action="#">
                                     <input type="text" placeholder="search">
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
                             </div>    
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -212,10 +219,12 @@
                     <div class="col-md-12 col-lg-12">
                         <nav id="dropdown">
                             <ul>
-                                <li><a href="index.html">HOME</a></li>
-                                <li><a href="about-us.html">ABOUT</a></li>
-                                <li><a href="shop.html">SHOP</a></li>
-                                <li><a href="shop.html">PAGES</a>
+                                <li><a href="../">HOME</a></li>
+                                <li><a href="buy">BUY</a></li>
+                                <li><a href="sell">SELL</a></li>
+                                <li><a href="share">SHARE</a></li>
+                                <li><a>About US</a></li>
+                                {{!-- <li><a href="shop.html">PAGES</a>
                                     <div class="sub-menu">
                                         <ul>
                                             <li><a href="about-us.html">About us</a></li>
@@ -229,18 +238,17 @@
                                             <li><a href="404.html">Error pges</a></li>
                                         </ul>
                                     </div>
-                                </li>
-                                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                                <li><a href="contact.html">CONTACT</a></li>
+                                </li> --}}
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>    
         </div>
-    <!--mobile menu end-->
+        <!--mobile menu end-->
     </div>
-    <!--header-area start-->
+    <!--END HEADER-AREA-->
+
     <!--my account area start-->
     <div class="my-a-w-title">
         <div class="container">
@@ -272,9 +280,11 @@
                                     <label>Password <span class="required">*</span></label>
                                     <input type="password" name="password"/>
                                 </p>
-                            <div class="form-action">
-                                <input type="submit" value="Login" />
-                            </div>
+                        </div>        
+                        <div class="form-action">
+                            <p class="lost_password"><a href="register">New to T2HP?</a></p>
+                            <input type="submit" value="Login" />
+                        </div>
                     </form>
                 </div>
             </div>
@@ -350,7 +360,7 @@
     <!--our brand end-->
     <!--footer-area start-->
     <div class="footer-area">
-        <div class="container">
+        {{!-- <div class="container">
             <div class="row footer-info">
                 <div class="col-xs-12 col-sm-7 col-md-7">
                     <div class="footer-order-shipp">
@@ -370,8 +380,8 @@
                     </div>
                 </div>    
             </div>
-        </div>
-        <div class="footer-list">
+        </div> --}}
+        {{!-- <div class="footer-list">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3">
@@ -441,16 +451,16 @@
                     </div>
                 </div>    
             </div>
-        </div>
+        </div> --}}
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="footer-copyright">
-                            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> </p>
+                            <p>Copyright &copy; 2022. Trojans Second-Hand Trading. All Rights Reserved.</p>
                         </div>    
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    {{!-- <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="footer-atm-card">
                             <ul>
                                 <li><a href="#"><img src="img/payment-1.PNG" alt=""></a></li>
@@ -460,7 +470,7 @@
                                 <li><a href="#"><img src="img/payment-5.PNG" alt=""></a></li>
                             </ul>    
                         </div>    
-                    </div>
+                    </div> --}}
                 </div>    
             </div>
         </div>
@@ -517,3 +527,5 @@
     ============================================ -->		
     <script src="js/main.js"></script>
 </body>
+
+</html>

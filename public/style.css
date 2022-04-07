@@ -1035,7 +1035,7 @@ body {font-family: 'Raleway', sans-serif;}
 }
 .header-top .classic-logo a {
   text-align: center;
-  width: 100%;
+  height: 30px;
 }
 .h-search-btn input {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
