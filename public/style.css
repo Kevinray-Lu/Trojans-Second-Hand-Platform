@@ -577,6 +577,17 @@ body {font-family: 'Raleway', sans-serif;}
     color: #fff;
     border-color: #ba9043
 }
+.single-product .product-block-text button {
+  background: #ba9043 none repeat scroll 0 0;
+  color: #fff;
+  border: medium none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 15px;
+  position: relative;
+  right: 2px;
+  top: 3px;
+}
 .single-product:hover .hover-icon {
     bottom: 0;
 }
@@ -1696,6 +1707,7 @@ body {font-family: 'Raleway', sans-serif;}
 .pagination-list {
   margin-top: 12px;
 }
+
 /*========================= 
  18. shop-list area
 ===========================*/
