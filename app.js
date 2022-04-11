@@ -62,7 +62,7 @@ app.post('/sell', function(req, res) {
 						console.log('yes');
 						User.findOneAndUpdate({username: req.session.username.username}, {
 							"$push": {
-								"Items_buy": req.body.title}},
+								"items_buy": req.body.title}},
 								{new: true}, (err, doc) => {
 									if (err) {
 										console.log("Something wrong when updating data!");
