@@ -1,0 +1,50 @@
+<h2>Your Items</h2>
+
+
+
+<p>{{error}}</p>
+
+<ol>
+{{#each shop}}
+<li class="text-muted"><p><em>Item name: {{title}}</em></p>
+	<p>Price: {{price}}</p>
+	<p>Who requested: {{requesters}}</p>
+	<p><small>Description: {{description}}</small></p></li>
+	<form method="POST" action="">
+	<input type="submit" id = {{id}} name = {{id}} value="Finished">
+	<form method="POST" action="">
+	<input type="submit" id = {{id}} name = {{id}} value="Denied">
+{{/each}}
+</ol>
+
+<ol>
+{{#each shop2}}
+<li class="text-muted"><p><em>Item name: {{title}}</em></p>
+	<p>Price: {{price}}</p>
+	<p>Who requested: {{requesters}}</p>
+	<p><small>Description: {{description}}</small></p></li>
+	<form method="POST" action="">
+	<input type="submit" id = {{id}} name = {{id}} value="Finished">
+	<form method="POST" action="">
+	<input type="submit" id = {{id}} name = {{id}} value="Denied">
+{{/each}}
+</ol>
+
+<h2>Requested Items</h2>
+<ol>
+{{#each request}}
+<li class="text-muted"><p><em>Item name: {{title}}</em></p>
+	<p>Price: {{price}}</p>
+	<p>Owner: {{owner}}</p>
+	<p><small>Description: {{description}}</small></p></li>
+{{/each}}
+</ol>
+
+<ol>
+{{#each request2}}
+<li class="text-muted"><p><em>Item name: {{title}}</em></p>
+	<p>Price: {{price}}</p>
+	<p>Owner: {{owner}}</p>
+	<p><small>Description: {{description}}</small></p></li>
+{{/each}}
+</ol>

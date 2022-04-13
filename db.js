@@ -6,6 +6,7 @@ const Item_buy = new mongoose.Schema({
 	description: String,
 	status: String, 
 	owner: [{ type: String, ref: 'User.username' }],
+	requesters: [{ type: String, ref: 'User.email' }],
 });
 
 const Item_share = new mongoose.Schema({
@@ -14,10 +15,12 @@ const Item_share = new mongoose.Schema({
 	description: String,
 	status: String, 
 	owner: [{ type: String, ref: 'User.username' }],
+	requesters: [{ type: String, ref: 'User.email' }],
 });
 
 const User = new mongoose.Schema({
 	username: String,
+	email: String,
 	password: {type: String, unique: true, required: true},
 	items_buy: [{ type: String, ref: 'Item_buy.title' }],
 	items_share: [{ type: String, ref: 'Item_share.title' }],
