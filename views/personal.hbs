@@ -1,4 +1,4 @@
-<h2>Your Items</h2>
+{{!-- <h2>Your Items</h2>
 <p>{{error}}</p>
 <ol>
 {{#each shop}}
@@ -43,8 +43,8 @@
 	<p>Owner: {{owner}}</p>
 	<p><small>Description: {{description}}</small></p></li>
 {{/each}}
-</ol>
-{{!-- 
+</ol> --}}
+
 <!doctype html>
 <html class="no-js" lang="">
 	<head>
@@ -118,7 +118,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!--header-area start-->
+        {{!-- <!--header-area start-->
 		<div class="header-area Home2">
             <!--top header-->
             <div class="header-top">
@@ -268,7 +268,164 @@
             </div>
         <!--mobile menu end-->
         </div>
-        <!--header-area end-->
+        <!--header-area end--> --}}
+
+		<!--START HEADER-AREA-->
+		<div class="header-area Home2">
+			<!--top header-->
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<!-- * Ignore some Links-->
+						<div class="col-xs-12 col-sm-5 col-md-4"> <!-- * To keep the position of the logo-->
+							{{!-- <div class="cl-h-t-info">
+								<ul>
+									<li><a href="my-account.html"><i class="fa fa-bars"></i> my account</a></li>
+									<li><a href="wishlist.html">my wishlist</a></li>
+								</ul>
+							</div> --}}
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-4">
+							<div class="classic-logo">
+								<a href="../"> <!-- * Return to the home page-->
+									<img src="img_t/logo.png" style="height:40px;" alt=""> <!-- * New Logo-->
+								</a>
+							</div>
+						</div>
+						<!-- * Ignore infos-->
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<div class="header-info c-l">
+								<ul>
+									{{!-- <li class="my-cart">
+										<a href="cart.html"><img src="img/home2/cart.png" alt=""></a>
+										<!--my cart content start-->
+										<div class="my-cart-description">
+											<div class="cart-img-desc">
+												<div class="cart-img">
+													<a href="#">
+														<img src="img/total-cart.jpg" alt="">
+													</a>
+													<span>1</span>
+												</div>
+												<div class="cart-pic-content">
+													<a href="#"><h4>Vestibulum suscipit</h4></a>
+													<span>£165.00</span>
+												</div>
+												<div class="cart-img-cross">
+													<a href="#"><i class="fa fa-times-circle"></i></a>
+												</div>
+											</div>
+											<div class="cart-img-desc">
+												<div class="cart-img">
+													<a href="#">
+														<img src="img/total-cart2.jpg" alt="">
+													</a>
+													<span>2</span>
+												</div>
+												<div class="cart-pic-content">
+													<a href="#"><h4>Vestibulum suscipit</h4></a>
+													<span>£165.00</span>
+												</div>
+												<div class="cart-img-cross">
+													<a href="#"><i class="fa fa-times-circle"></i></a>
+												</div>
+											</div>
+											<div class="cart-inner-bottom">
+												<p class="total">Subtotal: <span class="amount">£215.00</span></p>
+												<div class="clear"></div>
+												<p class="cart-button-top"><a href="checkout.html">Checkout</a></p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="my-account.html">login</a>
+									</li> --}}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header-bottom-->
+			<div class="header-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="hidden-xs col-sm-8 col-md-8">
+							<div class="header-menu home2">                                                  
+								<ul id="nav">
+									<li><a href="../">HOME</a></li>
+									<li><a href="buy">BUY</a></li>
+									<li><a href="sell">SELL</a></li>
+									<li><a href="share">SHARE</a></li>
+									<li><a>About US</a></li>
+									{{!-- <li><a href="shop.html">PAGES</a>
+										<div class="sub-menu">
+											<ul>
+												<li><a href="about-us.html">About us</a></li>
+												<li><a href="contact.html">Conatct us</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+												<li><a href="cart.html">cart pages</a></li>
+												<li><a href="product.html">product pages</a></li>
+												<li><a href="shop.html">shop pages</a></li>
+												<li><a href="wishlist.html">Wishlist</a></li>
+												<li><a href="my-account.html">My account</a></li>
+												<li><a href="404.html">Error pges</a></li>
+											</ul>
+										</div>
+									</li> --}}
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 ol-md-4">
+							{{!-- <div class="h-search-btn">                                                  
+								<div class="classic-search">
+									<form action="#">
+										<input type="text" placeholder="search">
+										<button type="submit"><i class="fa fa-search"></i></button>
+									</form>
+								</div>    
+							</div> --}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--mobile menu satrt-->
+			<div class="mobile-menu-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-lg-12">
+							<nav id="dropdown">
+								<ul>
+									<li><a href="../">HOME</a></li>
+									<li><a href="buy">BUY</a></li>
+									<li><a href="sell">SELL</a></li>
+									<li><a href="share">SHARE</a></li>
+									<li><a>About US</a></li>
+									{{!-- <li><a href="shop.html">PAGES</a>
+										<div class="sub-menu">
+											<ul>
+												<li><a href="about-us.html">About us</a></li>
+												<li><a href="contact.html">Conatct us</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+												<li><a href="cart.html">cart pages</a></li>
+												<li><a href="product.html">product pages</a></li>
+												<li><a href="shop.html">shop pages</a></li>
+												<li><a href="wishlist.html">Wishlist</a></li>
+												<li><a href="my-account.html">My account</a></li>
+												<li><a href="404.html">Error pges</a></li>
+											</ul>
+										</div>
+									</li> --}}
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>    
+			</div>
+			<!--mobile menu end-->
+		</div>
+		<!--END HEADER-AREA-->
+
         <!--START YOUR ITEM AREA-->
         <div class="my-a-w-title">
             <div class="container">
@@ -291,30 +448,38 @@
                                     <table>
                                         <thead>
                                             <tr>
-                                                <th class="product-remove"><span class="nobr">Remove</span></th>
+                                                {{!-- <th class="product-remove"><span class="nobr">Remove</span></th> --}}
                                                 <th class="product-thumbnail">Image</th>
                                                 <th class="product-name"><span class="nobr">Product Name</span></th>
                                                 <th class="product-price"><span class="nobr"> Unit Price </span></th>
-                                                <th class="product-stock-stauts"><span class="nobr"> Stock Status </span></th>
-                                                <th class="product-add-to-cart"><span class="nobr">add-to-cart </span></th>
+                                                <th class="product-stock-stauts"><span class="nobr">Requesters</span></th>
+												<th class="product-name"><span class="nobr">Description</span></th>
+                                                <th class="product-add-to-cart"><span class="nobr">Submit</span></th>
+												<th class="product-add-to-cart"><span class="nobr">Denied</span></th>
                                             </tr>
                                         </thead>
                                         <tbody>
+											{{#each shop}}
+												<tr>
+													<td class="product-thumbnail"><a href="#"></a></td>
+													<td class="product-name"><a href="/buy/{{id}}">{{title}}</a></td>
+													<td class="product-price"><span class="amount">{{price}}</span></td>
+													<td class="product-stock-status"><span class="wishlist-in-stock">{{requesters}}</span></td>
+													<td class="product-add-to-cart">
+														<form method="POST" action=""><input type="submit" id = {{id}} name = {{id}} value="Finished">
+													</td>
+													<td class="product-add-to-cart">
+														<form method="POST" action=""><input type="submit" id = {{id}} name = {{id}} value="Denied">
+													</td>
+												</tr>
+											{{/each}}
                                             <tr>
-                                                <td class="product-remove"><a href="#">×</a></td>
-                                                <td class="product-thumbnail"><a href="#"><img src="img/product/product.jpg" alt="" /></a></td>
-                                                <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
-                                                <td class="product-price"><span class="amount">£165.00</span></td>
-                                                <td class="product-stock-status"><span class="wishlist-in-stock">In Stock</span></td>
-                                                <td class="product-add-to-cart"><a href="#"> Add to Cart</a></td>
-                                            </tr>
-                                            <tr>
+												
                                                 <td class="product-remove"><a href="#">×</a></td>
                                                 <td class="product-thumbnail"><a href="#"><img src="img/product/product-2.png" alt="" /></a></td>
                                                 <td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
                                                 <td class="product-price"><span class="amount">£50.00</span></td>
                                                 <td class="product-stock-status"><span class="wishlist-in-stock">In Stock</span></td>
-                                                <td class="product-add-to-cart"><a href="#"> Add to Cart</a></td>
                                             </tr>
                                         </tbody>
                                         {{!-- <tfoot>
@@ -364,33 +529,28 @@
                                     <table>
                                         <thead>
                                             <tr>
-                                                <th class="product-remove"><span class="nobr">Remove</span></th>
+                                                {{!-- <th class="product-remove"><span class="nobr">Remove</span></th> --}}
                                                 <th class="product-thumbnail">Image</th>
                                                 <th class="product-name"><span class="nobr">Product Name</span></th>
-                                                <th class="product-price"><span class="nobr"> Unit Price </span></th>
-                                                <th class="product-stock-stauts"><span class="nobr"> Stock Status </span></th>
-                                                <th class="product-add-to-cart"><span class="nobr">add-to-cart </span></th>
+                                                <th class="product-price"><span class="nobr">Price</span></th>
+                                                <th class="product-stock-stauts"><span class="nobr">Owner</span></th>
+												<th class="product-name"><span class="nobr">Description</span></th>
+                                                <th class="product-add-to-cart"><span class="nobr">Cancel</span></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td class="product-remove"><a href="#">×</a></td>
-                                                <td class="product-thumbnail"><a href="#"><img src="img/product/product.jpg" alt="" /></a></td>
-                                                <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
-                                                <td class="product-price"><span class="amount">£165.00</span></td>
-                                                <td class="product-stock-status"><span class="wishlist-in-stock">In Stock</span></td>
-                                                <td class="product-add-to-cart"><a href="#"> Add to Cart</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="product-remove"><a href="#">×</a></td>
-                                                <td class="product-thumbnail"><a href="#"><img src="img/product/product-2.png" alt="" /></a></td>
-                                                <td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
-                                                <td class="product-price"><span class="amount">£50.00</span></td>
-                                                <td class="product-stock-status"><span class="wishlist-in-stock">In Stock</span></td>
-                                                <td class="product-add-to-cart"><a href="#"> Add to Cart</a></td>
-                                            </tr>
+													{{#each request}}
+													<tr>
+														<td class="product-thumbnail"><a href="/buy/{{id}}"></a></td>
+														<td class="product-name"><a href="/buy/{{id}}">{{title}}</a></td>
+														<td class="product-price"><span class="amount">{{price}}</span></td>
+														<td class="product-stock-status"><span class="wishlist-in-stock">{{owner}}</span></td>
+														<td class="product-name">{{Description}}</span></td>
+														<td class="product-add-to-cart"><a href="#">Cancel</a></td>
+													</tr>
+													{{/each}}
                                         </tbody>
-                                        <tfoot>
+                                        {{!-- <tfoot>
                                             <tr>
                                                 <td colspan="6">
                                                     <div class="wishlist-share">
@@ -405,7 +565,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                        </tfoot>
+                                        </tfoot> --}}
                                     </table>
                                 </div>	
                             </form>
@@ -415,191 +575,191 @@
             </div>
         </div>
         <!--END REQUESTED ITEM AREA-->
-        <!--our brand start-->
-        <div class="our-brand-area owl-indicator">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="brand-title">
-                           <h3>Our client</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="brand-list">
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-1.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-2.png" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-3.png" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-4.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-5.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-1.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-2.png" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-3.png" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-4.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="img/brand-5.jpg" alt=""></a>
-                            </div>    
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--our brand end-->
-        <!--footer-area start-->
-        <div class="footer-area">
-            <div class="container">
-                <div class="row footer-info">
-                    <div class="col-xs-12 col-sm-7 col-md-7">
-                        <div class="footer-order-shipp">
-                            <h2>free shipp on orders over $ 200</h2>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-5 col-md-5">
-                        <div class="footer-newsletter">
-                            <h3>newsletter sign up</h3>
-                            <div class="newsletter">
-                                <form action="#">
-                                    <input type="text" placeholder="your email" required>
-                                        <button type="submit">subscribe</button>
+		<!--our brand start-->
+		<div class="our-brand-area owl-indicator">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="brand-title">
+							<h3>Our client</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="brand-list">
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-1.jpg" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-2.png" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-3.png" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-4.jpg" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-5.jpg" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-1.jpg" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-2.png" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-3.png" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-4.jpg" alt=""></a>
+							</div>    
+						</div> 
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href=""><img src="img/brand-5.jpg" alt=""></a>
+							</div>    
+						</div>  
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--our brand end-->
+		<!--footer-area start-->
+		<div class="footer-area">
+			{{!-- <div class="container">
+				<div class="row footer-info">
+					<div class="col-xs-12 col-sm-7 col-md-7">
+						<div class="footer-order-shipp">
+							<h2>free shipp on orders over $ 200</h2>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-md-5">
+						<div class="footer-newsletter">
+							<h3>newsletter sign up</h3>
+							<div class="newsletter">
+								<form action="#">
+									<input type="text" placeholder="your email" required>
+										<button type="submit">subscribe</button>
 
-                                </form>    
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-            <div class="footer-list">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="single-footer classic">
-                                <div class="logo">
-                                    <a href="#"><img src="img/logo.png" alt=""></a>
-                                </div>
-                                <div class="f-classic-text">
-                                    <p>Lorem ipsum is simply dummy text of the printing typesetting industry.Lorem ipsum has been the industry standard dummy text ever since the 1500s.</p>
-                                </div>
-                                <div class="classic-adress">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-phone"></i></a>+(00)56-888-999</li>
-                                        <li><a href="#"><i class="fa fa-envelope"></i></a>Bootexperts.com</li>
-                                        <li><a href="#"><i class="fa fa-map-marker"></i></a>New circular road,1212,<span>New work city, america.</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="single-footer my-account">
-                                <h3>my account</h3>
-                                <div class="account-list">
-                                    <ul>
-                                        <li><a href="#">login</a></li>
-                                        <li><a href="#">My account</a></li>
-                                        <li><a href="#">My cart</a></li>
-                                        <li><a href="#">Wishlist</a></li>
-                                        <li><a href="#">checkout</a></li>
-                                        <li><a href="#">userinfor</a></li>
-                                        <li><a href="#">Contact us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="single-footer information">
-                                <h3>information</h3>
-                                <div class="account-list">
-                                    <ul>
-                                        <li><a href="#">sitemap</a></li>
-                                        <li><a href="#">Privacy policy</a></li>
-                                        <li><a href="#">Your account</a></li>
-                                        <li><a href="#">Advance search</a></li>
-                                        <li><a href="#">affiliates</a></li>
-                                        <li><a href="#">groupe sales</a></li>
-                                        <li><a href="#">Contact us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="single-footer conatact-us">
-                                <h3>information</h3>
-                                <div class="account-list">
-                                    <ul>
-                                        <li><a href="#">product recall</a></li>
-                                        <li><a href="#">gift vousher</a></li>
-                                        <li><a href="#">Return exchange</a></li>
-                                        <li><a href="#">Shipping options</a></li>
-                                        <li><a href="#">blogs</a></li>
-                                        <li><a href="#">affiliates</a></li>
-                                        <li><a href="#">Helpe & FAQs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-6">
-                            <div class="footer-copyright">
-                                <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> </p>
-                            </div>    
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6">
-                            <div class="footer-atm-card">
-                                <ul>
-                                    <li><a href="#"><img src="img/payment-1.PNG" alt=""></a></li>
-                                    <li><a href="#"><img src="img/payment-2.PNG" alt=""></a></li>
-                                    <li><a href="#"><img src="img/payment-3.PNG" alt=""></a></li>
-                                    <li><a href="#"><img src="img/payment-4.PNG" alt=""></a></li>
-                                    <li><a href="#"><img src="img/payment-5.PNG" alt=""></a></li>
-                                </ul>    
-                            </div>    
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-        <!--footer-area end-->
+								</form>    
+							</div>
+						</div>
+					</div>    
+				</div>
+			</div> --}}
+			{{!-- <div class="footer-list">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="single-footer classic">
+								<div class="logo">
+									<a href="#"><img src="img/logo.png" alt=""></a>
+								</div>
+								<div class="f-classic-text">
+									<p>Lorem ipsum is simply dummy text of the printing typesetting industry.Lorem ipsum has been the industry standard dummy text ever since the 1500s.</p>
+								</div>
+								<div class="classic-adress">
+									<ul>
+										<li><a href="#"><i class="fa fa-phone"></i></a>+(00)56-888-999</li>
+										<li><a href="#"><i class="fa fa-envelope"></i></a>Bootexperts.com</li>
+										<li><a href="#"><i class="fa fa-map-marker"></i></a>New circular road,1212,<span>New work city, america.</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="single-footer my-account">
+								<h3>my account</h3>
+								<div class="account-list">
+									<ul>
+										<li><a href="#">login</a></li>
+										<li><a href="#">My account</a></li>
+										<li><a href="#">My cart</a></li>
+										<li><a href="#">Wishlist</a></li>
+										<li><a href="#">checkout</a></li>
+										<li><a href="#">userinfor</a></li>
+										<li><a href="#">Contact us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="single-footer information">
+								<h3>information</h3>
+								<div class="account-list">
+									<ul>
+										<li><a href="#">sitemap</a></li>
+										<li><a href="#">Privacy policy</a></li>
+										<li><a href="#">Your account</a></li>
+										<li><a href="#">Advance search</a></li>
+										<li><a href="#">affiliates</a></li>
+										<li><a href="#">groupe sales</a></li>
+										<li><a href="#">Contact us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="single-footer conatact-us">
+								<h3>information</h3>
+								<div class="account-list">
+									<ul>
+										<li><a href="#">product recall</a></li>
+										<li><a href="#">gift vousher</a></li>
+										<li><a href="#">Return exchange</a></li>
+										<li><a href="#">Shipping options</a></li>
+										<li><a href="#">blogs</a></li>
+										<li><a href="#">affiliates</a></li>
+										<li><a href="#">Helpe & FAQs</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>    
+				</div>
+			</div> --}}
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<div class="footer-copyright">
+								<p>Copyright &copy; 2022. Trojans Second-Hand Trading. All Rights Reserved.</p>
+							</div>    
+						</div>
+						{{!-- <div class="col-xs-12 col-sm-6 col-md-6">
+							<div class="footer-atm-card">
+								<ul>
+									<li><a href="#"><img src="img/payment-1.PNG" alt=""></a></li>
+									<li><a href="#"><img src="img/payment-2.PNG" alt=""></a></li>
+									<li><a href="#"><img src="img/payment-3.PNG" alt=""></a></li>
+									<li><a href="#"><img src="img/payment-4.PNG" alt=""></a></li>
+									<li><a href="#"><img src="img/payment-5.PNG" alt=""></a></li>
+								</ul>    
+							</div>    
+						</div> --}}
+					</div>    
+				</div>
+			</div>
+		</div>
+		<!--footer-area end-->
         
         
         
@@ -651,4 +811,4 @@
 		============================================ -->		
         <script src="js/main.js"></script>
     </body>
-</html> --}}
+</html>
