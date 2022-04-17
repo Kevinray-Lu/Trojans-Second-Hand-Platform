@@ -12,6 +12,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.2",
     "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
     "express-session": "^1.17.2",
     "hbs": "^4.2.0",
     "mongoose": "^6.2.8"
