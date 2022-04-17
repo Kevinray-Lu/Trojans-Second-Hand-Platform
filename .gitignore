@@ -1,4 +1,10 @@
 node_modules
 views/home0.hbs
 views/buy0.hbs
+
+# Metadata
 *.DS_Store
+
+# Automaticlly generated
+*package-lock.json
+*package.json

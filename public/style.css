@@ -8,10 +8,13 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
+    USC color
+    color: #990001
+    color: #FFCC02
     
+
     CSS INDEX
     ===================
-	
     1. Theme Default CSS (body, link color, section etc)
     2. header-area
     3. dropdown menu
@@ -51,7 +54,7 @@
 -----------------------------------------------------------------------------------*/
 
 /*----------------------------------------*/
-/*  0.  Theme default CSS
+/* Theme default CSS
 /*----------------------------------------*/
 html, body {height: 100%;}
 .floatleft {float:left}
@@ -108,7 +111,7 @@ body {font-family: 'Raleway', sans-serif;}
   font-size: 15px;
   padding: 35px 0;
   font-weight: 600;
-  transition: all 0.3s ease 0s;  
+  transition: all 0.25s ease 0s;  
 }
 .header-menu ul li > a:hover,.header-info ul li . a:hover {
   color: #876B39;
@@ -172,8 +175,9 @@ body {font-family: 'Raleway', sans-serif;}
   opacity: 1;
   transform: perspective(600px) rotateX(0deg);
 }
+/*T2HP Header Button */
 .header-menu ul li:hover a,.header-info li > a:hover{
-  color: #BA9043;
+  color: #FFCC02;
 }
 /*========================= 
 3.2 mega menu
@@ -576,17 +580,6 @@ body {font-family: 'Raleway', sans-serif;}
     background: #ba9043;
     color: #fff;
     border-color: #ba9043
-}
-.single-product .product-block-text button {
-  background: #ba9043 none repeat scroll 0 0;
-  color: #fff;
-  border: medium none;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 8px 15px;
-  position: relative;
-  right: 2px;
-  top: 3px;
 }
 .single-product:hover .hover-icon {
     bottom: 0;
@@ -1046,7 +1039,7 @@ body {font-family: 'Raleway', sans-serif;}
 }
 .header-top .classic-logo a {
   text-align: center;
-  height: 30px;
+  width: 100%;
 }
 .h-search-btn input {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -1707,7 +1700,6 @@ body {font-family: 'Raleway', sans-serif;}
 .pagination-list {
   margin-top: 12px;
 }
-
 /*========================= 
  18. shop-list area
 ===========================*/
