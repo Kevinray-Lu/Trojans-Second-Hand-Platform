@@ -120,7 +120,7 @@ app.post('/sell', function(req, res) {
 
 app.get('/lend', function(req, res) {
 	if (req.session.username === undefined) {
-		res.render('lend', {error: 'Please login or register first!'});
+		res.render('home', {error: 'Please login or register first!'});
 	}
     res.render('lend');
 });

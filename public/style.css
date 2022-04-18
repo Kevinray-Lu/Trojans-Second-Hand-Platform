@@ -9,6 +9,10 @@
 
 -----------------------------------------------------------------------------------
     
+	USC color
+    color: #990001
+    color: #FFCC02
+
     CSS INDEX
     ===================
 	
@@ -852,7 +856,7 @@ body {font-family: 'Raleway', sans-serif;}
   border: 1px solid #ddd;
 }
 .our-brand-area .single-brand img:hover{
-  border-color: #ba9043;
+  border-color: #FFCC02;
 }
 .single-brand > a {
   display: block;
@@ -2226,7 +2230,7 @@ border-width: medium 1px 1px;
 float: left;
 padding: 15px 10px;
 width: 100%;}
-.form-action p.lost_password{float: left;
+.form-action p.account_control{float: left;
 line-height: 36px;
 margin: 0;}
 .form-action input[type="submit"] {
@@ -2255,11 +2259,12 @@ margin: 0 20px 0 0;}
 margin-top: 0;
 position: relative;
 top: 2px;}
-.lost_password > a,.wishlist-content .product-name > a{
+.account_control > a,.wishlist-content .product-name > a{
   color: #777;
 }
-.lost_password > a:hover,.wishlist-content .product-name > a:hover,.wishlist-table table .product-remove > a:hover{
-color: #BA9043
+/* New Color in Register and Login*/
+.account_control > a:hover,.wishlist-content .product-name > a:hover,.wishlist-table table .product-remove > a:hover{
+color: #990001 
 }
 .my-acount-desc {
   padding-bottom: 50px;
