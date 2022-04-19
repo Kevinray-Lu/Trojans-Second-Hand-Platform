@@ -50,6 +50,6 @@ mongoose.model('User', User);
 // }
 
 // Using local database
-// mongoose.connect('mongodb://localhost/final')
+mongoose.connect('mongodb://localhost/final')
 // Using cloud database
-mongoose.connect('mongodb+srv://Trojan551:dbTrojan551@551trojan.t6rzu.mongodb.net/final?retryWrites=true&w=majority');
+// mongoose.connect('mongodb+srv://Trojan551:dbTrojan551@551trojan.t6rzu.mongodb.net/final?retryWrites=true&w=majority');

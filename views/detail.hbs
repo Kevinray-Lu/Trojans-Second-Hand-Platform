@@ -90,20 +90,20 @@
                 <div class="hidden-xs hidden-sm col-md-6 col-lg-6">
                     <div class="header-menu">
                         <ul id="nav">
-                            <li><a href="/">HOME</a></li>
-                            <li><a href="buy">BUY</a></li>
-                            <li><a href="sell">SELL</a></li>
-							<li><a href="lend">LEND</a></li>
-                            <li><a href="share">SHARE/RENT</a></li>
-                            <li><a href="personal">MY ACCOUNT</a></li>
+                            <li><a href="../">HOME</a></li>
+                            <li><a href="../buy">BUY</a></li>
+                            <li><a href="../sell">SELL</a></li>
+							<li><a href="../lend">LEND</a></li>
+                            <li><a href="../share">SHARE/RENT</a></li>
+                            <li><a href="../personal">MY ACCOUNT</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                     <div class="header-info">
                         <ul>
-                            <li><a href="register">Register</a></li>
-                            <li><a href="login">Login</a></li>
+                            <li><a href="../register">Register</a></li>
+                            <li><a href="../login">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -116,12 +116,12 @@
                     <div class="col-md-12">
                         <nav id="dropdown">
                             <ul>
-                            <li><a href="/">HOME</a></li>
-                            <li><a href="buy">BUY</a></li>
-                            <li><a href="sell">SELL</a></li>
-							<li><a href="lend">LEND</a></li>
-                            <li><a href="share">SHARE/RENT</a></li>
-                            <li><a href="personal">MY ACCOUNT</a></li>
+                            <li><a href="../">HOME</a></li>
+                            <li><a href="../buy">BUY</a></li>
+                            <li><a href="../sell">SELL</a></li>
+							<li><a href="../lend">LEND</a></li>
+                            <li><a href="../share">SHARE/RENT</a></li>
+                            <li><a href="../personal">MY ACCOUNT</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -130,7 +130,7 @@
         </div>
         <!--mobile menu end-->
     </div>
-        <!--header-area start-->
+        <!--header-area end-->
         <!--product header area start-->
         <div class="product-header-area">
             <div class="container">
@@ -174,13 +174,9 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="single-product-info">
-                            {{!-- <div class="product-nav">
-                                <a href="#"><i class="fa fa-angle-right"></i></a>
-                            </div> --}}
                             <h1 class="product_title">{{shop.title}}</h1>
                             <div class="price-box">
                                 <span class="new-price">£{{shop.price}}</span>
-                                {{!-- <span class="old-price">£190.00</span> --}}
                             </div>
                             <div class="pro-rating">
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -198,317 +194,13 @@
 									<form method="POST" action="">
 										<input type="submit" id = {{shop.id}} name = {{shop.id}} value="request">
 									</form>
-                            {{!-- <div class="add-to-wishlist-p">
-                                <a title="" data-toggle="tooltip" href="#" data-original-title="Add to Wishlist"><i class="fa fa-star"></i></a>
-                                <a title="" data-toggle="tooltip" href="#" data-original-title="Compare"><i class="fa fa-exchange"></i></a>
-                            </div>
-                            <div class="share_buttons">
-                                <a href="#"><img alt="" src="img/share-img.png"></a>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--product-simple area end-->
-        <!--product-tab area start-->
-        {{!-- <div class="product-tab-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 col-md-9 col-sm-9">
-                        <div class="product-tabs">
-                            <div>
-                              <!-- Nav tabs -->
-                              <ul role="tablist" class="nav nav-tabs">
-                                <li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="tab-desc" href="#tab-desc" aria-expanded="true">Description</a></li>
-                                <li role="presentation" class=""><a data-toggle="tab" role="tab" aria-controls="page-comments" href="#page-comments" aria-expanded="false">Reviews (1)</a></li>
-                              </ul>
-                              <!-- Tab panes -->
-                              <div class="tab-content">
-                                <div id="tab-desc" class="tab-pane active" role="tabpanel">
-                                    <div class="product-tab-desc">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.</p>
-                                        <p>Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget.</p>
-                                    </div>
-                                </div>
-                                <div id="page-comments" class="tab-pane" role="tabpanel">
-                                    <div class="product-tab-desc">
-                                        <div class="product-page-comments">
-                                            <h2>1 review for Integer consequat ante lectus</h2>
-                                            <ul>
-                                                <li>
-                                                    <div class="product-comments">
-                                                        <img alt="" src="img/avatar.png">
-                                                        <div class="product-comments-content">
-                                                            <p><strong>admin</strong> -
-                                                                <span>March 7, 2015:</span>
-                                                                <span class="pro-comments-rating">
-                                                                    <i class="fa fa-star"></i>								
-                                                                    <i class="fa fa-star"></i>								
-                                                                    <i class="fa fa-star"></i>								
-                                                                    <i class="fa fa-star"></i>								
-                                                                </span>
-                                                            </p>
-                                                            <div class="desc">
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="review-form-wrapper">
-                                                <h3>Add a review</h3>
-                                                <form action="#">
-                                                    <input type="text" placeholder="your name">
-                                                    <input type="email" placeholder="your email">
-                                                    <div class="your-rating">
-                                                        <h5>Your Rating</h5>
-                                                        <span>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                        </span>
-                                                        <span>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                        </span>
-                                                        <span>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                        </span>
-                                                        <span>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                        </span>
-                                                    </div>
-                                                    <textarea placeholder="Your Rating" rows="10" cols="30" id="product-message"></textarea>
-                                                    <input type="submit" value="submit">
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>						
-                        </div>
-                        <div class="clear"></div>
-                        <div class="upsells_products_widget">
-                            <div class="section-heading">
-                                <h3>Up-Sells</h3>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                                    <div class="f-single-product">
-                                        <div class="f-product-img">
-                                            <a class="f-p-img-p" href="#">
-                                                <img class="primary-img" src="img/home2/feature-2.jpg" alt="">
-                                                <img class="hover-img" src="img/home2/feature-22.jpg" alt="">
-                                            </a>
-                                            <div class="f-img-block">
-                                                <div class="feature-add-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="feature-add-cart">
-                                                    <a href="#">add to cart</a>
-                                                </div>    
-                                            </div>
-                                        </div>
-                                        <div class="feature-product-block">
-                                            <h3><a href="#">hand bag<span>$60.23</span></a></h3>
-                                            <div class="feature-p-block-icon">
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>   
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                                    <div class="f-single-product">
-                                        <div class="f-product-img">
-                                            <a class="f-p-img-p" href="#">
-                                                <img class="primary-img" src="img/home2/feature-3.jpg" alt="">
-                                                <img class="hover-img" src="img/home2/feature-33.jpg" alt="">
-                                            </a>
-                                            <div class="f-img-block">
-                                                <div class="feature-add-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="feature-add-cart">
-                                                    <a href="#">add to cart</a>
-                                                </div>    
-                                            </div>
-                                        </div>
-                                        <div class="feature-product-block">
-                                            <h3><a href="#">women's shoes<span>$60.23</span></a></h3>
-                                            <div class="feature-p-block-icon">
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>   
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                                    <div class="f-single-product">
-                                        <div class="f-product-img">
-                                            <a class="f-p-img-p" href="#">
-                                                <img class="primary-img" src="img/home2/feature-an-3.JPG" alt="">
-                                                <img class="hover-img" src="img/home2/feature-an-1.JPG" alt="">
-                                            </a>
-                                            <div class="f-img-block">
-                                                <div class="feature-add-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="feature-add-cart">
-                                                    <a href="#">add to cart</a>
-                                                </div>    
-                                            </div>
-                                        </div>
-                                        <div class="feature-product-block">
-                                            <h3><a href="#">Glasses<span>$60.23</span></a></h3>
-                                            <div class="feature-p-block-icon">
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>   
-                                </div>
-                                <div class="col-lg-3 hidden-md hidden-sm col-xs-12">
-                                    <div class="f-single-product">
-                                        <div class="f-product-img">
-                                            <a class="f-p-img-p" href="#">
-                                                <img class="primary-img" src="img/home2/feature-4.jpg" alt="">
-                                                <img class="hover-img" src="img/home2/feature-1.jpg" alt="">
-                                            </a>
-                                            <div class="f-img-block">
-                                                <div class="feature-add-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="feature-add-cart">
-                                                    <a href="#">add to cart</a>
-                                                </div>    
-                                            </div>
-                                        </div>
-                                        <div class="feature-product-block">
-                                            <h3><a href="#">hand bag<span>$60.23</span></a></h3>
-                                            <div class="feature-p-block-icon">
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>   
-                                </div>						
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <!-- widget-recent start -->
-                        <aside class="widget top-product-widget">
-                            <h3 class="sidebar-title">Recent</h3>
-                            <ul>
-                                <li>
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img alt="" src="img/product/b-d-1.jpg" class="primary-image">
-                                                <img alt="" src="img/product/b-d-2.jpg" class="secondary-image">
-                                            </a>						
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="pro-info">
-                                                <h2 class="product-name"><a href="#">Curabitur vulputate</a></h2>
-                                                <div class="price-box">
-                                                    <span class="new-price">£90.00</span>
-                                                    <span class="old-price">£120.00</span>
-                                                </div>								
-                                            </div>									
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img alt="" src="img/product/bb-2.JPG" class="primary-image">
-                                                <img alt="" src="img/product/bb-1.JPG" class="secondary-image">
-                                            </a>						
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="pro-info">
-                                                <h2 class="product-name"><a href="#">Aliquam lobortis est</a></h2>
-                                                <div class="price-box">
-                                                    <span class="new-price">£70.00</span>
-                                                    <span class="old-price">£100.00</span>
-                                                </div>								
-                                            </div>								
-                                        </div>
-                                    </div>	
-                                </li>
-                                <li>
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img alt="" src="img/product/cap-1.JPG" class="primary-image">
-                                                <img alt="" src="img/product/cap-2.JPG" class="secondary-image">
-                                            </a>						
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="pro-info">
-                                                <h2 class="product-name"><a href="#">Nulla sed libero</a></h2>
-                                                <div class="price-box">
-                                                    <span class="new-price">£80.00</span>
-                                                    <span class="old-price">£120.00</span>
-                                                </div>								
-                                            </div>								
-                                        </div>
-                                    </div>	
-                                </li>
-                                <li>
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img alt="" src="img/product/bbb-2.png" class="primary-image">
-                                                <img alt="" src="img/product/product.jpg" class="secondary-image">
-                                            </a>						
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="pro-info">
-                                                <h2 class="product-name"><a href="#">Pellentesque posuere</a></h2>
-                                                <div class="price-box">
-                                                    <span class="new-price">£50.00</span>
-                                                </div>								
-                                            </div>									
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </aside>
-                        <!-- widget-recent end -->				
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <!--product-tab area end-->
+
         <!--our brand start-->
         <div class="our-brand-area owl-indicator">
             <div class="container">
@@ -578,99 +270,6 @@
         <!--our brand end-->
         <!--footer-area start-->
     <div class="footer-area">
-    {{!--     <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-7 col-md-7">
-                    <div class="footer-info">
-                        <div class="footer-order-shipp">
-                            <h2>free shipp on orders over $ 200</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-5 col-md-5">
-                    <div class="footer-newsletter">
-                        <h3>newsletter sign up</h3>
-                        <div class="newsletter">
-                            <form action="#">
-                                <input type="text" placeholder="your email" required>
-                                <button type="submit">subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-list">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="single-footer classic">
-                            <div class="logo">
-                                <a href="#"><img src="img/logo.png" alt=""></a>
-                            </div>
-                            <div class="f-classic-text">
-                                <p>Lorem ipsum is simply dummy text of the printing typesetting industry.Lorem ipsum has been the industry standard dummy text ever since the 1500s.</p>
-                            </div>
-                            <div class="classic-adress">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-phone"></i></a>+(00)56-888-999</li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i></a>Bootexperts.com</li>
-                                    <li><a href="#"><i class="fa fa-map-marker"></i></a>New circular road,1212,<span>New work city, america.</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="single-footer my-account">
-                            <h3>my account</h3>
-                            <div class="account-list">
-                                <ul>
-                                    <li><a href="#">login</a></li>
-                                    <li><a href="#">My account</a></li>
-                                    <li><a href="#">My cart</a></li>
-                                    <li><a href="#">Wishlist</a></li>
-                                    <li><a href="#">checkout</a></li>
-                                    <li><a href="#">userinfor</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="single-footer information">
-                            <h3>information</h3>
-                            <div class="account-list">
-                                <ul>
-                                    <li><a href="#">sitemap</a></li>
-                                    <li><a href="#">Privacy policy</a></li>
-                                    <li><a href="#">Your account</a></li>
-                                    <li><a href="#">Advance search</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">groupe sales</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="single-footer conatact-us">
-                            <h3>information</h3>
-                            <div class="account-list">
-                                <ul>
-                                    <li><a href="#">product recall</a></li>
-                                    <li><a href="#">gift vousher</a></li>
-                                    <li><a href="#">Return exchange</a></li>
-                                    <li><a href="#">Shipping options</a></li>
-                                    <li><a href="#">blogs</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">Helpe & FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
@@ -679,17 +278,6 @@
                             <p>Copyright &copy; 2022. Trojans Second-Hand Trading.  All Rights Reserved.<a target="_blank" href="http://sc.chinaz.com/moban/"></a> </p>
                         </div>
                     </div>
-                    {{!-- <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="footer-atm-card">
-                            <ul>
-                                <li><a href="#"><img src="img/payment-1.PNG" alt=""></a></li>
-                                <li><a href="#"><img src="img/payment-2.PNG" alt=""></a></li>
-                                <li><a href="#"><img src="img/payment-3.PNG" alt=""></a></li>
-                                <li><a href="#"><img src="img/payment-4.PNG" alt=""></a></li>
-                                <li><a href="#"><img src="img/payment-5.PNG" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
