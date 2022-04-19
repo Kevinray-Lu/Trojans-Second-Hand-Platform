@@ -82,7 +82,8 @@
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                     <div class="classic-logo">
                         <a href="../">
-                            <img src="img/logo.png" alt="">
+                            {{!-- <img src="img/logo.png" alt=""> --}}
+							<img src="img_t/logo.png" style="height:40px;" alt="">
                         </a>
                     </div>
                 </div>
@@ -151,7 +152,7 @@
                         <div class="gird-menu">
                             <ul>
                                 <li><a href="/">Home</a> <i class="fa fa-angle-right"></i></li>
-                                <li>Shop</li>
+                                <li>Rent</li>
                             </ul>
                         </div>
                     </div>
@@ -168,29 +169,6 @@
                     </div>
                     <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                         <div class="shop-list-toolbar">
-                            <div class="shop-toolbar-position">
-                                <div class="view-mode">
-                                    <a href="shop.html" class="active"><i class="fa fa-th-large"></i></a>
-                                    <a href="shop-list.html" class="list"><i class="fa fa-th-list"></i></a>
-                                </div>
-                                <div class="show-result">
-                                    <p> Showing 1&ndash;12 of 19 results</p>
-                                </div>
-                            </div>
-                            <div class="toolbar-form">
-                                <form action="#">
-                                    <div class="tolbar-select">
-                                        <select>
-                                          <option value="volvo">Sort by popularity</option>
-                                          <option value="saab">Default sorting</option>
-                                          <option value="mercedes">Sort by average rating</option>
-                                          <option value="audi">Sort by newness</option>
-                                          <option value="audi">Sort by price: low to high</option>
-                                          <option value="audi">Sort by price: high to low</option>
-                                        </select> 
-                                    </div>
-                                </form>								
-                            </div>
                         </div>
                         <!--shop-gird view-->
                         <div class="row">
@@ -226,291 +204,9 @@
 									{{/each}}
                                 </ol>
 								
-						
-								
-								
-								{{!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/bb-2.JPG" alt="">
-                                                <img class="hover-img" src="img/product/bg-c-1.JPG" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/bb-1.JPG" alt="">
-                                                <img class="hover-img" src="img/product/bb-2.JPG" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/bbb-1.jpg" alt="">
-                                                <img class="hover-img" src="img/product/bg-an.jpg" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/bg-an.jpg" alt="">
-                                                <img class="hover-img" src="img/product/product-4.png" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/bg-c-1.JPG" alt="">
-                                                <img class="hover-img" src="img/product/bg-c-2.JPG" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/cap-1.JPG" alt="">
-                                                <img class="hover-img" src="img/product/cap-2.JPG" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/hat%20-2.JPG" alt="">
-                                                <img class="hover-img" src="img/product/hat-1.JPG" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/shoes-p.jpg" alt="">
-                                                <img class="hover-img" src="img/product/shoes-2.jpg" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/bb-2.JPG" alt="">
-                                                <img class="hover-img" src="img/product/product.jpg" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/bb-1.JPG" alt="">
-                                                <img class="hover-img" src="img/product/b-d-2.jpg" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="single-product">
-                                        <div class="product-img">
-                                            <a class="b-s-p-img" href="#">
-                                                <img class="primary-img" src="img/product/hat-1.JPG" alt="">
-                                                <img class="hover-img" src="img/product/bg-c-2.JPG" alt="">
-                                            </a>
-                                            <div class="img-block">
-                                                <div class="primary-icon">
-                                                    <a href="#"><i class="fa fa-random"></i></a>
-                                                    <a href="#"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                                <div class="hover-icon">
-                                                   <span class="random"><a href="#"><i class="fa fa-random"></i></a></span>
-                                                    <span class="eye"><a href="#"><i class="fa fa-eye"></i>Quick view</a></span>
-                                                 </div>    
-                                            </div>
-                                        </div>
-                                        <div class="product-block-text">
-                                            <h3><a href="#">Bag<span>$60.23</span></a></h3>
-                                             <a class="p-b-t-a-c" href="#">add to cart</a>
-                                        </div>
-                                    </div>    
-                                </div> --}}
-
-
-
-
-
                             </div>
                         </div>
                         <!--pagination-->
-                        <div class="shop-pagination">
-                            <div class="pagination-list">
-                                <ul>
-                                    <li class="active">1</li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                                </ul>
-                            </div>					
-                        </div>
                     </div>
                 </div>
             </div>
@@ -553,31 +249,6 @@
                             <a href=""><img src="img/brand-5.jpg" alt=""></a>
                         </div>
                     </div>
-                    {{!-- <div class="col-md-12">
-                        <div class="single-brand">
-                            <a href=""><img src="img/brand-1.jpg" alt=""></a>
-                        </div>
-                    </div> --}}
-                    {{!-- <div class="col-md-12">
-                        <div class="single-brand">
-                            <a href=""><img src="img/brand-2.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="single-brand">
-                            <a href=""><img src="img/brand-3.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="single-brand">
-                            <a href=""><img src="img/brand-4.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="single-brand">
-                            <a href=""><img src="img/brand-5.jpg" alt=""></a>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
@@ -585,99 +256,6 @@
         <!--our brand end-->
         <!--footer-area start-->
     <div class="footer-area">
-    {{!--     <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-7 col-md-7">
-                    <div class="footer-info">
-                        <div class="footer-order-shipp">
-                            <h2>free shipp on orders over $ 200</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-5 col-md-5">
-                    <div class="footer-newsletter">
-                        <h3>newsletter sign up</h3>
-                        <div class="newsletter">
-                            <form action="#">
-                                <input type="text" placeholder="your email" required>
-                                <button type="submit">subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-list">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="single-footer classic">
-                            <div class="logo">
-                                <a href="#"><img src="img/logo.png" alt=""></a>
-                            </div>
-                            <div class="f-classic-text">
-                                <p>Lorem ipsum is simply dummy text of the printing typesetting industry.Lorem ipsum has been the industry standard dummy text ever since the 1500s.</p>
-                            </div>
-                            <div class="classic-adress">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-phone"></i></a>+(00)56-888-999</li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i></a>Bootexperts.com</li>
-                                    <li><a href="#"><i class="fa fa-map-marker"></i></a>New circular road,1212,<span>New work city, america.</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="single-footer my-account">
-                            <h3>my account</h3>
-                            <div class="account-list">
-                                <ul>
-                                    <li><a href="#">login</a></li>
-                                    <li><a href="#">My account</a></li>
-                                    <li><a href="#">My cart</a></li>
-                                    <li><a href="#">Wishlist</a></li>
-                                    <li><a href="#">checkout</a></li>
-                                    <li><a href="#">userinfor</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="single-footer information">
-                            <h3>information</h3>
-                            <div class="account-list">
-                                <ul>
-                                    <li><a href="#">sitemap</a></li>
-                                    <li><a href="#">Privacy policy</a></li>
-                                    <li><a href="#">Your account</a></li>
-                                    <li><a href="#">Advance search</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">groupe sales</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="single-footer conatact-us">
-                            <h3>information</h3>
-                            <div class="account-list">
-                                <ul>
-                                    <li><a href="#">product recall</a></li>
-                                    <li><a href="#">gift vousher</a></li>
-                                    <li><a href="#">Return exchange</a></li>
-                                    <li><a href="#">Shipping options</a></li>
-                                    <li><a href="#">blogs</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">Helpe & FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
@@ -686,17 +264,6 @@
                             <p>Copyright &copy; 2022. Trojans Second-Hand Trading.  All Rights Reserved.<a target="_blank" href="http://sc.chinaz.com/moban/"></a> </p>
                         </div>
                     </div>
-                    {{!-- <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="footer-atm-card">
-                            <ul>
-                                <li><a href="#"><img src="img/payment-1.PNG" alt=""></a></li>
-                                <li><a href="#"><img src="img/payment-2.PNG" alt=""></a></li>
-                                <li><a href="#"><img src="img/payment-3.PNG" alt=""></a></li>
-                                <li><a href="#"><img src="img/payment-4.PNG" alt=""></a></li>
-                                <li><a href="#"><img src="img/payment-5.PNG" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
