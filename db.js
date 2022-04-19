@@ -39,7 +39,6 @@ mongoose.model('User', User);
 //  const path = require('path');
 //  const fn = path.join(__dirname, 'config.json');
 //  const data = fs.readFileSync(fn);
-
 //  // our configuration file will be in json, so parse it and set the
 //  // conenction string appropriately!
 //  const conf = JSON.parse(data);
@@ -50,4 +49,7 @@ mongoose.model('User', User);
 //  dbconf = 'mongodb://localhost/final';
 // }
 
+// Using local database
+// mongoose.connect('mongodb://localhost/final')
+// Using cloud database
 mongoose.connect('mongodb+srv://Trojan551:dbTrojan551@551trojan.t6rzu.mongodb.net/final?retryWrites=true&w=majority');
