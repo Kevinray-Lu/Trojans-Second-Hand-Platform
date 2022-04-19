@@ -10,3 +10,7 @@ views/share0.hbs
 # Automaticlly generated
 *package-lock.json
 *package.json
+
+# Test Picture
+uploads/**
+testpic/**
