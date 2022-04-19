@@ -1,15 +1,18 @@
+
+<p>{{error}}</p>
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>product page</title>
+        <title>PRODUCT DETAIL</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- favicon
 		============================================ -->		
-        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+        {{!-- <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"> --}}
 		
 		<!-- Google Fonts
 		============================================ -->
@@ -87,12 +90,12 @@
                 <div class="hidden-xs hidden-sm col-md-6 col-lg-6">
                     <div class="header-menu">
                         <ul id="nav">
-                            <li><a href="/">HOME</a></li>
-                            <li><a href="buy">BUY</a></li>
-                            <li><a href="sell">SELL</a></li>
-							<li><a href="lend">LEND</a></li>
-                            <li><a href="share">SHARE/RENT</a></li>
-                            <li><a href="personal">MY ACCOUNT</a></li>
+                            <li><a href="../">HOME</a></li>
+                            <li><a href="../buy">BUY</a></li>
+                            <li><a href="../sell">SELL</a></li>
+							<li><a href="../lend">LEND</a></li>
+                            <li><a href="../share">SHARE/RENT</a></li>
+                            <li><a href="../personal">MY ACCOUNT</a></li>
                             {{!-- <li><a href="shop.html">PAGES</a>
                                 <div class="sub-menu">
                                     <ul>
@@ -211,10 +214,8 @@
 				<div class="col-md-12">
 					<div class="product-menu">
 						<ul>
-							<li><a href="index.html">Home</a> <i class="fa fa-angle-right"></i></li>
-							<li><a href="shop.html">Shop</a> <i class="fa fa-angle-right"></i></li>
-							<li><a href="#">Women</a> <i class="fa fa-angle-right"></i></li>
-							<li>Integer consequat ante lectus</li>
+							<li><a href="../">Home</a> <i class="fa fa-angle-right"></i></li>
+							<li>{{shop.title}}</li>
 						</ul>
 					</div>
 				</div>
@@ -230,12 +231,12 @@
                         <div class="single-product-image">
                             <div class="single-product-tab">
                               <!-- Nav tabs -->
-                              <ul role="tablist" class="nav nav-tabs">
+                              {{!-- <ul role="tablist" class="nav nav-tabs">
                                 <li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="home" href="#home"><img src="img/product/s1.jpg" alt=""></a></li>
                                 <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="profile" href="#profile"><img src="img/product/s2.jpg" alt=""></a></li>
                                 <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="messages" href="#messages"><img src="img/product/s3.jpg" alt=""></a></li>
                                 <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="settings" href="#settings"><img src="img/product/s4.jpg" alt=""></a></li>
-                              </ul>
+                              </ul> --}}
 
                               <!-- Tab panes -->
                               <div class="tab-content">
@@ -249,9 +250,9 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="single-product-info">
-                            <div class="product-nav">
+                            {{!-- <div class="product-nav">
                                 <a href="#"><i class="fa fa-angle-right"></i></a>
-                            </div>
+                            </div> --}}
                             <h1 class="product_title">{{shop.title}}</h1>
                             <div class="price-box">
                                 <span class="new-price">£{{shop.price}}</span>
@@ -585,7 +586,7 @@
         </div> --}}
         <!--product-tab area end-->
         <!--our brand start-->
-        {{!-- <div class="our-brand-area owl-indicator">
+        <div class="our-brand-area owl-indicator">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -598,58 +599,58 @@
                     <div class="brand-list">
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-1.jpg" alt=""></a>
+                                <a href=""><img src="../img/brand-1.jpg" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-2.png" alt=""></a>
+                                <a href=""><img src="../img/brand-2.png" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-3.png" alt=""></a>
+                                <a href=""><img src="../img/brand-3.png" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-4.jpg" alt=""></a>
+                                <a href=""><img src="../img/brand-4.jpg" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-5.jpg" alt=""></a>
+                                <a href=""><img src="../img/brand-5.jpg" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-1.jpg" alt=""></a>
+                                <a href=""><img src="../img/brand-1.jpg" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-2.png" alt=""></a>
+                                <a href=""><img src="../img/brand-2.png" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-3.png" alt=""></a>
+                                <a href=""><img src="../img/brand-3.png" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-4.jpg" alt=""></a>
+                                <a href=""><img src="../img/brand-4.jpg" alt=""></a>
                             </div>    
                         </div> 
                         <div class="col-md-12">
                             <div class="single-brand">
-                                <a href=""><img src="img/brand-5.jpg" alt=""></a>
+                                <a href=""><img src="../img/brand-5.jpg" alt=""></a>
                             </div>    
                         </div>  
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
         <!--our brand end-->
         <!--footer-area start-->
     <div class="footer-area">
