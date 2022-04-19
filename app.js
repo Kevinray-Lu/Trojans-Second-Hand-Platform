@@ -8,13 +8,11 @@ const User = mongoose.model('User');
 const session = require('express-session');
 const auth = require('./auth.js');
 const exphbs=require('express-handlebars');
+var fs = require('fs');
+var path = require('path');
 
-var hbs = exphbs.create({
-    helpers: {
-        hello: function () { console.log('hello'); }
-    }
-});
-app.engine('handlebars', hbs.engine);
+
+
 app.use(express.static('public'));
 app.set('view engine', 'hbs');
 app.use(express.urlencoded({ extended: false }));
@@ -26,7 +24,18 @@ const sessionOptions = {
 };
 app.use(session(sessionOptions));
 
-
+var multer = require('multer');
+  
+var storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads')
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.fieldname + '-' + Date.now())
+    }
+});
+  
+var upload = multer({ storage: storage });
 app.get('/', function(req, res) {
     res.render('home');
 });
@@ -37,7 +46,14 @@ app.get('/buy', function(req, res) {
 	}
 	Item_sale.find({status: {$ne: "finished"}}, function(err, varToStoreResult) {
 				if (err) {console.log(err);}
-				const items = varToStoreResult;
+				let items = varToStoreResult;
+				items = items.map((item) => { // start mapping images
+					if (item.img.data !== undefined) {
+					item.img.data = item.img.data.toString('base64'); // convert the data into base64
+					item.img = item.img.toObject();
+					}
+					return item;
+				});
 				res.render('buy', {shop: items});
 			});
 });
@@ -73,8 +89,12 @@ app.get('/buy/:slug', (req, res) => {
 	slug1 = slug1[slug1.length -1];
 	Item_sale.find({_id: slug1}, function (err, result) {
 		if (err) {console.log(err);}
-				const item = result;
-				res.render('detail', {shop: item[0]});
+				let item = result[0];
+				if (item.img.data !== undefined) {
+					item.img.data = item.img.data.toString('base64'); // convert the data into base64
+					item.img = item.img.toObject();
+					}
+				res.render('detail', {shop: item});
 			});
 });
 
@@ -85,7 +105,7 @@ app.get('/sell', function(req, res) {
 	}
     res.render('sell');
 });
-app.post('/sell', function(req, res) {
+app.post('/sell', upload.single('image'), function(req, res, next) {
 	if (typeof(req.body.title) !== 'string') {
 		res.render('sell', {error: 'Name is not valid!'});
 	}
@@ -98,6 +118,8 @@ app.post('/sell', function(req, res) {
 					price: parseInt(req.body.price),
 					description: req.body.description,
 					owner: req.session.username.username,
+					img: {data: fs.readFileSync('./uploads/' + req.file.filename),
+					contentType: req.file.mimetype},
 					status: 'posted',
 					updated_at : Date.now()
 				}).save(function(err, Item_sale, count){
@@ -120,11 +142,11 @@ app.post('/sell', function(req, res) {
 
 app.get('/lend', function(req, res) {
 	if (req.session.username === undefined) {
-		res.render('home', {error: 'Please login or register first!'});
+		res.render('lend', {error: 'Please login or register first!'});
 	}
     res.render('lend');
 });
-app.post('/lend', function(req, res) {
+app.post('/lend', upload.single('image'), function(req, res) {
 	if (typeof(req.body.title) !== 'string') {
 		res.render('lend', {error: 'Name is not valid!'});
 	}
@@ -137,6 +159,8 @@ app.post('/lend', function(req, res) {
 					price: parseInt(req.body.price),
 					description: req.body.description,
 					owner: req.session.username.username,
+					img: {data: fs.readFileSync('./uploads/' + req.file.filename),
+					contentType: req.file.mimetype},
 					status: 'posted',
 					updated_at : Date.now()
 				}).save(function(err, Item_sale, count){
@@ -161,9 +185,16 @@ app.get('/share', function(req, res) {
 	if (req.session.username === undefined) {
 		res.render('home', {error: 'Please login or register first!'});
 	}
-	Item_share.find({}, function(err, varToStoreResult) {
+	Item_share.find({status: {$ne: "finished"}}, function(err, varToStoreResult) {
 				if (err) {console.log(err);}
-				const items = varToStoreResult;
+				let items = varToStoreResult;
+				items = items.map((item) => { // start mapping images
+					if (item.img.data !== undefined) {
+					item.img.data = item.img.data.toString('base64'); // convert the data into base64
+					item.img = item.img.toObject();
+					}
+					return item;
+				});
 				res.render('share', {shop: items});
 			});
 });
@@ -188,8 +219,12 @@ app.get('/share/:slug', (req, res) => {
 	slug1 = slug1[slug1.length -1];
 	Item_share.find({_id: slug1}, function (err, result) {
 		if (err) {console.log(err);}
-				const item = result;
-				res.render('detail', {shop: item[0]});
+				let item = result[0];
+				if (item.img.data !== undefined) {
+					item.img.data = item.img.data.toString('base64'); // convert the data into base64
+					item.img = item.img.toObject();
+					}
+				res.render('detail', {shop: item});
 			});
 });
 
