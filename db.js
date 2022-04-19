@@ -7,7 +7,13 @@ const Item_buy = new mongoose.Schema({
 	status: String, 
 	owner: [{ type: String, ref: 'User.username' }],
 	requesters: [{ type: String, ref: 'User.email' }],
+	img:
+    {
+        data: Buffer,
+        contentType: String
+    }
 });
+
 
 const Item_share = new mongoose.Schema({
 	title: String,
@@ -16,6 +22,11 @@ const Item_share = new mongoose.Schema({
 	status: String, 
 	owner: [{ type: String, ref: 'User.username' }],
 	requesters: [{ type: String, ref: 'User.email' }],
+	img:
+    {
+        data: Buffer,
+        contentType: String
+    }
 });
 
 const User = new mongoose.Schema({
@@ -50,6 +61,6 @@ mongoose.model('User', User);
 // }
 
 // Using local database
-// mongoose.connect('mongodb://localhost/final')
+mongoose.connect('mongodb://localhost/final')
 // Using cloud database
-mongoose.connect('mongodb+srv://Trojan551:dbTrojan551@551trojan.t6rzu.mongodb.net/final?retryWrites=true&w=majority');
+//mongoose.connect('mongodb+srv://Trojan551:dbTrojan551@551trojan.t6rzu.mongodb.net/final?retryWrites=true&w=majority');
