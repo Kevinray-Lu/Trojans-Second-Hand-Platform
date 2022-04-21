@@ -504,14 +504,14 @@ body {font-family: 'Raleway', sans-serif;}
 .product-img .b-s-p-img::before {
   background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
   content: "";
-  height: 100%;
+  height: 0%;
   left: 0;
   top: 0;
   transition: all 0.5s ease 0s;
   width: 100%;
   z-index: 999;
   opacity: 0;
-  position: absolute  
+  position: absolute
 }
 .product-img .b-s-p-img::before,.product-img .primary-icon,.product-img .hover-icon {
   transition: all 0.5s ease 0s;
