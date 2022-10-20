@@ -9,10 +9,6 @@
 
 -----------------------------------------------------------------------------------
     
-	USC color
-    color: #990001
-    color: #FFCC02
-
     CSS INDEX
     ===================
 	
@@ -504,14 +500,14 @@ body {font-family: 'Raleway', sans-serif;}
 .product-img .b-s-p-img::before {
   background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
   content: "";
-  height: 0%;
+  height: 100%;
   left: 0;
   top: 0;
   transition: all 0.5s ease 0s;
   width: 100%;
   z-index: 999;
   opacity: 0;
-  position: absolute
+  position: absolute  
 }
 .product-img .b-s-p-img::before,.product-img .primary-icon,.product-img .hover-icon {
   transition: all 0.5s ease 0s;
@@ -856,7 +852,7 @@ body {font-family: 'Raleway', sans-serif;}
   border: 1px solid #ddd;
 }
 .our-brand-area .single-brand img:hover{
-  border-color: #FFCC02;
+  border-color: #ba9043;
 }
 .single-brand > a {
   display: block;
@@ -1039,7 +1035,7 @@ body {font-family: 'Raleway', sans-serif;}
 }
 .header-top .classic-logo a {
   text-align: center;
-  width: 100%;
+  height: 30px;
 }
 .h-search-btn input {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -2230,7 +2226,7 @@ border-width: medium 1px 1px;
 float: left;
 padding: 15px 10px;
 width: 100%;}
-.form-action p.account_control{float: left;
+.form-action p.lost_password{float: left;
 line-height: 36px;
 margin: 0;}
 .form-action input[type="submit"] {
@@ -2259,12 +2255,11 @@ margin: 0 20px 0 0;}
 margin-top: 0;
 position: relative;
 top: 2px;}
-.account_control > a,.wishlist-content .product-name > a{
+.lost_password > a,.wishlist-content .product-name > a{
   color: #777;
 }
-/* New Color in Register and Login*/
-.account_control > a:hover,.wishlist-content .product-name > a:hover,.wishlist-table table .product-remove > a:hover{
-color: #990001 
+.lost_password > a:hover,.wishlist-content .product-name > a:hover,.wishlist-table table .product-remove > a:hover{
+color: #BA9043
 }
 .my-acount-desc {
   padding-bottom: 50px;

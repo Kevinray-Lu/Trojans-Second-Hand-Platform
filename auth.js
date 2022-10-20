@@ -13,7 +13,6 @@ function register(username, email, password, errorCallback, successCallback) {
 				bcrypt.hash(password, 10, function(err, hash) {
 					new User({
 						username: username,
-						email: email,
 						password: hash,
 						actions: [],
 					}).save(function(err, user, count){
