@@ -61,7 +61,7 @@
 .collection-tablecell {
   margin-top: 0;
 }    
-.single-footer.my-account {
+.single-footer {
   margin-bottom: 30px;
 }    
 .footer-area .footer-list {
@@ -257,14 +257,14 @@
 .slider-area.home1 .layer-1,.slider-area.home1 .layer-2{
   display: none;
 }    
-.header-area.home1 .classic-logo > a {
+.header-area.home1 .header-logo > a {
   text-align: center;
 }    
 .header-info {
   text-align: center;
   width: 100%;
 }   
-.header-area .classic-logo {
+.header-area .header-logo {
   margin: 30px 0 0;
 }  
 .header-info ul li {
@@ -363,13 +363,13 @@
 .footer-area .footer-list {
   padding: 30px 0;
 }    
-.single-footer.my-account,.single-footer.information,.single-footer.conatact-us {
+.single-footer {
   margin-top: 20px;
 }
 .footer-area .single-footer h3 {
   margin-bottom: 18px;
 }
-.single-footer .account-list li:last-child a {
+.single-footer .link-list li:last-child a {
   padding-bottom: 0;
 }
 .footer-copyright p,.footer-atm-card {
@@ -406,7 +406,7 @@
 .header-area.Home2 .header-info ul li {
   padding: 25px 0;
 }    
-.header-area.Home2 .classic-logo {
+.header-area.Home2 .header-logo {
   margin: 25px 0 0;
 }    
 .h-search-btn {
@@ -713,14 +713,14 @@ p.checkout-coupon input[type="submit"] {
   .mobile-menu-area {
   display: block;
 }
-.header-area.home1 .classic-logo > a {
+.header-area.home1 .header-logo > a {
   text-align: center;
 }    
 .header-info {
   text-align: center;
   width: 100%;
 }   
-.header-area .classic-logo {
+.header-area .header-logo {
   margin: 30px 0 0;
 }  
 .header-info ul li {
@@ -804,13 +804,13 @@ p.checkout-coupon input[type="submit"] {
 .footer-area .footer-list {
   padding: 30px 0;
 }    
-.single-footer.my-account,.single-footer.information,.single-footer.conatact-us {
+.single-footer {
   margin-top: 20px;
 }
 .footer-area .single-footer h3 {
   margin-bottom: 18px;
 }
-.single-footer .account-list li:last-child a {
+.single-footer .link-list li:last-child a {
   padding-bottom: 0;
 }
 .footer-copyright p,.footer-atm-card {
@@ -835,7 +835,7 @@ p.checkout-coupon input[type="submit"] {
 .header-area.Home2 .header-info ul li {
   padding: 25px 0;
 }    
-.header-area.Home2 .classic-logo {
+.header-area.Home2 .header-logo {
   margin: 25px 0 0;
 }    
 .h-search-btn {

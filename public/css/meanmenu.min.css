@@ -52,7 +52,7 @@ a.meanmenu-reveal{display:none}
 .mean-container .mean-nav ul li li li li a{width:60%;padding:1em 20%}
 .mean-container .mean-nav ul li li li li li a{width:50%;padding:1em 25%}
 .mean-container .mean-nav ul li a:hover {
-  background: #BA9043;
+  background: #ffcc00;
   color: #fff;
 }
 .mean-container .mean-nav ul li a.mean-expand{
@@ -70,7 +70,7 @@ a.meanmenu-reveal{display:none}
 	background: #F8F8F8;
 	}
 .mean-container .mean-nav ul li a.mean-expand:hover {
-  background: #BA9043;
+  background: #990000;
 }
 .mean-container .mean-push{float:left;width:100%;padding:0;margin:0;clear:both}
 .mean-nav .wrapper{width:100%;padding:0;margin:0}

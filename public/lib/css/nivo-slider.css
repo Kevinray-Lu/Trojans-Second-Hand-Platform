@@ -220,7 +220,7 @@ custom slider
 	position:absolute;
 	top:0;
 	left:0;
-	background-color: #BA9043;
+	background-color: #990000;
 	height:5px;
 	-webkit-animation: myfirst 5000ms ease-in-out;
 	-moz-animation: myfirst 5000ms ease-in-out;

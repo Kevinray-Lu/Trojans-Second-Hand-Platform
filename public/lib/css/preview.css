@@ -135,7 +135,7 @@ preview-2
     font-size: 0;
 }
 .preview-2 .nivo-directionNav a.nivo-prevNav:hover:before{
-  background: #BA9043;
+  background: #990000;
   color: #fff;
 }
 .preview-2 .nivo-directionNav a.nivo-prevNav:before{
@@ -157,7 +157,7 @@ preview-2
   z-index: 9;
 }
 .preview-2 .nivo-directionNav a.nivo-nextNav:hover:before{
-  background:#BA9043;
+  background:#990000;
   color: #fff
 }
 .preview-2 .nivo-directionNav a.nivo-nextNav:before{
@@ -184,7 +184,7 @@ preview-2
     bottom: 68px;
 }
 .preview-2 .nivo-controlNav a {
-	border:5px solid #BA9043;
+	border:5px solid #990000;
 	display: inline-block;
 	height:18px;
 	margin: 0 5px;

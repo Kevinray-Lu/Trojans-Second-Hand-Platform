@@ -7,9 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- favicon
-		============================================ -->		
-        {{!-- <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"> --}}
+		<!--FAVICON-->		
+		{{!-- <link rel="shortcut icon" type="image/x-icon" href="../img_t/favicon.ico"> --}}
 		
 		<!-- Google Fonts
 		============================================ -->
@@ -76,9 +75,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<div class="classic-logo">
+						<div class="header-logo">
 							<a href="../">
-								<img src="../img/logo.png" alt="">
+								<img src="../img_t/logo.png" alt="">
 							</a>
 						</div>
 					</div>
@@ -151,14 +150,6 @@
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="single-product-image">
                             <div class="single-product-tab">
-                              <!-- Nav tabs -->
-                              {{!-- <ul role="tablist" class="nav nav-tabs">
-                                <li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="home" href="#home"><img src="img/product/s1.jpg" alt=""></a></li>
-                                <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="profile" href="#profile"><img src="img/product/s2.jpg" alt=""></a></li>
-                                <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="messages" href="#messages"><img src="img/product/s3.jpg" alt=""></a></li>
-                                <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="settings" href="#settings"><img src="img/product/s4.jpg" alt=""></a></li>
-                              </ul> --}}
-
                               <!-- Tab panes -->
                               <div class="tab-content">
                                 <div id="home" class="tab-pane active" role="tabpanel"><img src="data:{{shop.img.contentType}};base64,{{shop.img.data}}"></div>
@@ -173,14 +164,7 @@
                         <div class="single-product-info">
                             <h1 class="product_title">{{shop.title}}</h1>
                             <div class="price-box">
-                                <span class="new-price">£{{shop.price}}</span>
-                            </div>
-                            <div class="pro-rating">
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
+                                <span class="new-price">${{shop.price}}</span>
                             </div>
                             <div class="short-description">
                                 <p>{{shop.description}}</p>						
@@ -189,7 +173,9 @@
                                 <label>Availability</label>: <strong>In stock</strong>
                             </div>
 									<form method="POST" action="">
-										<input type="submit" id = {{shop.id}} name = {{shop.id}} value="request">
+                                        <div class="request-button">
+										<input type="submit" id = {{shop.id}} name = {{shop.id}} value="request now!">
+                                        </div>
 									</form>
                         </div>
                     </div>
@@ -198,89 +184,121 @@
         </div>
         <!--product-simple area end-->
 
-        <!--our brand start-->
-        <div class="our-brand-area owl-indicator">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="brand-title">
-                           <h3>Our client</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="brand-list">
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-1.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-2.png" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-3.png" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-4.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-5.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-1.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-2.png" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-3.png" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-4.jpg" alt=""></a>
-                            </div>    
-                        </div> 
-                        <div class="col-md-12">
-                            <div class="single-brand">
-                                <a href=""><img src="../img/brand-5.jpg" alt=""></a>
-                            </div>    
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--our brand end-->
-        <!--footer-area start-->
-    <div class="footer-area">
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="footer-copyright">
-                            <p>Copyright &copy; 2022. Trojans Second-Hand Trading.  All Rights Reserved.<a target="_blank" href="http://sc.chinaz.com/moban/"></a> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!--footer-area end-->
-        
+        <!--USC LINK START-->
+		<div class="our-brand-area owl-indicator">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="brand-title">
+							<h3>Related Links</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="brand-list">
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href="https://www.usc.edu/"><img src="../img/OW.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href="https://my.usc.edu/"><img src="../img/myusc.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href="https://libraries.usc.edu/"><img src="../img/library.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href="https://usc.edu/myshr"><img src="../img/myshr.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="single-brand">
+								<a href="https://housing.usc.edu/"><img src="../img/uschousing.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!--USC LINK END-->
+
+		<!--FOOTER-AREA START-->
+		<div class="footer-area">
+			<div class="footer-list">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="single-footer classic">
+								<div class="logo">
+									<a href="../"><img src="img_t/logo.png" style="height:50px;" alt=""></a>
+								</div>
+								<div class="f-classic-text">
+									<p>Trojan 2nd hand platfrom is an information website dedicated to the sale and rental of second-hand items for USC students. Whether you're looking for any products, there's always something here for you. </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="single-footer">
+								<h3>Contact Us</h3>
+							</div>
+							<div class="single-footer classic">
+								<div class="classic-adress">
+									<ul>
+										<li><a><i class="fa fa-phone"></i></a>cellphone number</li>
+										<li><a><i class="fa fa-envelope"></i></a>feedback@tthp.com</li>
+										<li><a><i class="fa fa-map-marker"></i></a>University of Southern California<span>Los Angeles, CA.</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="single-footer">
+								<h3>T2HP</h3>
+								<div class="link-list">
+									<ul>
+										{{!-- <li><a href="../">Home</a></li> --}}
+										<li><a href="buy">Buy</a></li>
+										<li><a href="sell">Sell</a></li>
+										<li><a href="lend">Lend</a></li>
+										<li><a href="share">Share/Rent</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="single-footer">
+								<h3>USC Websites</h3>
+								<div class="link-list">
+									<ul>
+										<li><a href="https://www.usc.edu/">University of Southern California</a></li>
+										<li><a href="https://viterbischool.usc.edu/">School of Viterbi Engineering</a></li>
+										<li><a href="https://academics.usc.edu/">Academics</a></li>
+										<li><a href="https://about.usc.edu/">About USC</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>    
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<div class="footer-copyright">
+								<p>Copyright &copy; 2022. Trojans Second-Hand Trading. All Rights Reserved.</p>
+							</div>    
+						</div>
+					</div>    
+				</div>
+			</div>
+		</div>
+		<!--FOOTER AREA END-->
         
         
         
