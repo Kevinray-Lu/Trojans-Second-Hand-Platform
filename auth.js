@@ -1,16 +1,21 @@
 const a = 1;
+// use bcrypt to hash passwords
 const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 
 const User = mongoose.model('User');
 
+// function to register new users
 function register(username, email, password, errorCallback, successCallback) {
+		// check if user already exists
 		User.findOne({username: username},(err, result, count) => {
 			if (result) {
 				console.log('username exists!');
 				errorCallback({message: 'USERNAME ALREADY EXISTS'});
 			} else {
+				// hash passwords to prevent leak
 				bcrypt.hash(password, 10, function(err, hash) {
+					// create new user
 					new User({
 						username: username,
 						email: email,
@@ -30,9 +35,11 @@ function register(username, email, password, errorCallback, successCallback) {
 		});
 }
 
+// function to check login credentials
 function login(username, password, errorCallback, successCallback) {
 	User.findOne({username: username}, (err, user, count) => {
 		if (!err && user) {
+			// unhash passwords using bcrypt
 			bcrypt.compare(password, user.password, (err, passwordMatch) => {
 				if (passwordMatch) {
 					successCallback(user);
@@ -49,6 +56,7 @@ function login(username, password, errorCallback, successCallback) {
 	});
 }
 
+// create session with user logged in
 function startAuthenticatedSession(req, user, callback) {
 	req.session.regenerate((err) => {
 		if (!err) {

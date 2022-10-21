@@ -5,6 +5,7 @@ const Item_buy = new mongoose.Schema({
 	price: Number,
 	description: String,
 	status: String, 
+	// foreign key to reference owners
 	owner: [{ type: String, ref: 'User.username' }],
 	requesters: [{ type: String, ref: 'User.email' }],
 	img:
@@ -14,12 +15,13 @@ const Item_buy = new mongoose.Schema({
     }
 });
 
-
+// item object for share
 const Item_share = new mongoose.Schema({
 	title: String,
 	price: Number,
 	description: String,
 	status: String, 
+	// foreign key to reference owners
 	owner: [{ type: String, ref: 'User.username' }],
 	requesters: [{ type: String, ref: 'User.email' }],
 	img:
@@ -29,9 +31,11 @@ const Item_share = new mongoose.Schema({
     }
 });
 
+// user object
 const User = new mongoose.Schema({
 	username: String,
 	email: String,
+	// constraints to make password required
 	password: {type: String, unique: true, required: true},
 	items_buy: [{ type: String, ref: 'Item_buy.title' }],
 	items_share: [{ type: String, ref: 'Item_share.title' }],
@@ -61,7 +65,6 @@ mongoose.model('User', User);
 // }
 
 // Using local database
-//mongoose.connect('mongodb://localhost/final')
+mongoose.connect('mongodb://localhost/final')
 // Using cloud database
-//mongoose.connect('mongodb+srv://Trojan551:dbTrojan551@551trojan.t6rzu.mongodb.net/final?retryWrites=true&w=majority');
-mongoose.connect('mongodb+srv://kevinray:551trojans@cluster0.rssnli0.mongodb.net/final?retryWrites=true&w=majority');
+// not showing in opensource projects
