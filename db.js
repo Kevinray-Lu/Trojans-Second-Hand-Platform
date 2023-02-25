@@ -1,4 +1,7 @@
+require('dotenv').config()
+
 const mongoose = require('mongoose');
+
 //Item object for sale
 const Item_buy = new mongoose.Schema({
 	title: String,
@@ -65,6 +68,8 @@ mongoose.model('User', User);
 // }
 
 // Using local database
-mongoose.connect('mongodb://localhost/final')
+// mongoose.connect('mongodb://localhost/final')
 // Using cloud database
 // not showing in opensource projects
+
+mongoose.connect(process.env.DB);

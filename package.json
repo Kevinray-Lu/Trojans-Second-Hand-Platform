@@ -22,6 +22,7 @@
     "denque": "^2.0.1",
     "depd": "^1.1.2",
     "destroy": "^1.0.4",
+    "dotenv": "^16.0.3",
     "ee-first": "^1.1.1",
     "encodeurl": "^1.0.2",
     "escape-html": "^1.0.3",
@@ -103,7 +104,8 @@
     "wrappy": "^1.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -116,6 +118,6 @@
   },
   "homepage": "https://github.com/Kevinray-Lu/551-Final-Trojans#readme",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   }
 }

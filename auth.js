@@ -1,8 +1,7 @@
-const a = 1;
 // use bcrypt to hash passwords
 const bcrypt = require('bcryptjs');
+// Connect MongoDB
 const mongoose = require('mongoose');
-
 const User = mongoose.model('User');
 
 // function to register new users

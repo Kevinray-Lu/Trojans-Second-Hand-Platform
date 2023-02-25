@@ -7,16 +7,17 @@ views/share0.hbs
 # Metadata
 *.DS_Store
 
-# Automaticlly generated
-*package-lock.json
-*package.json
-
 # Uploads
 uploads/**
-
-# Original Images
-**.psd
 
 # Product Images
 product/**
 
+# Local Images
+publicAssets/*.psd
+**.psd
+
+# MongoDB Config
+mongodb.pem
+.env
+.gcloudignore
