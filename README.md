@@ -29,8 +29,8 @@ Trojans Online Resource Exchange Platform is a web application designed to promo
 
 ## Files
 
-- `app.js`: main backend file
-- `auth.js`: file for user validation
+- `app.js`: main backend file, skeleton code for all functional pages (e.g. buy/sell, etc), stores and validates session data.
+- `auth.js`: file for user validation, interacts with app.js for checking registration and login credentials. Password hashing included for security.
 - `db.js`: file for managing the database
 - `views/*`: main frontend files
 - `public/css/*`: file for styling the frontend
