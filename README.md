@@ -1,3 +1,5 @@
+![T2HP]("https://github.com/Kevinray-Lu/551-Final-Trojans/blob/main/publicAssets/logo-1024x1024.png")
+
 # Trojans Online Resource Exchange Platform
 
 Trojans Online Resource Exchange Platform is a web application designed to promote convenience on USC campus-wise second-hand product information sharing. It allows users to post and view second-hand items, manage their items, and track their status. It also provides useful USC links and a friendly user interface.
