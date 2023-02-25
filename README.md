@@ -42,15 +42,6 @@ Trojans Online Resource Exchange Platform is a web application designed to promo
 - `views/*`: main frontend files
 - `public/css/*`: file for styling the frontend
 
-## Contributing
-
-Contributions are welcome! To contribute, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch for your feature: `git checkout -b <feature-name>`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin <feature-name>`
-5. Submit a pull request.
 
 ## License
 
