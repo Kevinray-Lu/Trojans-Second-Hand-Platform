@@ -1,4 +1,4 @@
-![T2HP]("https://github.com/Kevinray-Lu/551-Final-Trojans/blob/main/publicAssets/logo-1024x1024.png")
+[T2HP](https://github.com/Kevinray-Lu/551-Final-Trojans/blob/main/publicAssets/logo-1024x1024.png)
 
 # Trojans Online Resource Exchange Platform
 
