@@ -9,7 +9,6 @@ Trojans Online Resource Exchange Platform is a web application designed to promo
   - [Features](#features)
   - [Installation](#installation)
   - [Files](#files)
-  - [Contributing](#contributing)
   - [License](#license)
 
 ## Features
@@ -45,4 +44,4 @@ Trojans Online Resource Exchange Platform is a web application designed to promo
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - All rights reserved Trojans Second Hand Trading
