@@ -20,18 +20,12 @@ Trojans Online Resource Exchange Platform is a web application designed to promo
 - Useful USC links
 - Friendly user interface (self-designed web icon, welcome page, clear directions, etc.)
 
-## Installation
+## Online Access & usage
 
-1. Clone the repository:
-`git clone https://github.com/<username>/<repository>.git`
+1. Access the web application at `http://localhost:3000`.
 
-2. Install the dependencies:
-`npm install`
-
-3. Start the server:
-`npm start`
-
-4. Access the web application at `http://localhost:3000`.
+2. Usage:
+- This app is not supposed to run without a local .env file for db connection. This is to protect online data access security.
 
 ## Files
 
