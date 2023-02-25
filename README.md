@@ -24,7 +24,7 @@ Trojans Online Resource Exchange Platform is a web application designed to promo
 
 ## Online Access & usage
 
-1. Access the web application at `https://trojan2hp.uw.r.appspot.com/`.
+1. Access the web application at [Google Platform](https://trojan2hp.uw.r.appspot.com/)
 
 2. Usage:
 - This app is not supposed to run without a local .env file for db connection. This is to protect online data access security.
