@@ -33,8 +33,8 @@
 
 - `app.js`: main backend file, skeleton code for all functional pages (e.g. buy/sell, etc), stores and validates session data.
 - `auth.js`: file for user validation, interacts with app.js for checking registration and login credentials. Password hashing included for security.
-- `db.js`: file for managing the database
-- `views/*`: main frontend files
+- `db.js`: file for managing MongoDB database, interacts with app.js to send and store data with predefined data structures. Connects with online database with .env file.
+- `views/*`: main frontend files, including .hbs file for every page for the platform, interacts with app.js for data ingestion and data output.
 - `public/css/*`: file for styling the frontend
 
 
