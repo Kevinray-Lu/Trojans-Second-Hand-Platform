@@ -2,7 +2,7 @@
 
 # Trojans Online Resource Exchange Platform
 
-Trojans Online Resource Exchange Platform is a web application designed to promote convenience on USC campus-wise second-hand product information sharing. It allows users to post and view second-hand items, manage their items, and track their status. It also provides useful USC links and a friendly user interface.
+[Trojans Online Resource Exchange Platform](https://trojan2hp.uw.r.appspot.com/) is a web application designed to promote convenience on USC campus-wise second-hand product information sharing. It allows users to post and view second-hand items, manage their items, and track their status. It also provides useful USC links and a friendly user interface.
 
 ## Table of Contents
 
