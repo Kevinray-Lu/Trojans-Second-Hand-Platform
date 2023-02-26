@@ -9,7 +9,7 @@
 - [Trojans Online Resource Exchange Platform](#trojans-online-resource-exchange-platform)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
-  - [Online Access & usage](#Online-Access-&-usage)
+  - [Online Access & usage](#online-access-&-usage)
   - [Files](#files)
   - [License](#license)
 
